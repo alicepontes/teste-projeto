@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
 section {
   display: grid;
   grid-template-columns: 1fr 3.5fr 1fr;
-  grid-template-rows: 25vh 6vh 150vh 50vh 9vh;
+  grid-template-rows: 25vh 9vh 130vh 30vh 9vh;
   grid-template-areas:
     "c c c"
     "nt nt nt"
@@ -36,12 +37,16 @@ header {
   top: 7px;
 }
 #nome-da-loja {
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  margin-top: 150px;
-  margin-left: 500px;
 }
-
+h1 {
+  font: 4rem "Sacramento", cursive;
+}
+#p-nome-loja {
+  text-align: center;
+  font-family: "Kufam", cursive;
+}
 a {
   font: 1.65rem "Liberation Mono", sans-serif;
   text-decoration: none;
@@ -60,10 +65,10 @@ a {
   color: #ffffff;
 }
 .nav-top:hover {
-  color: #d39f9f;
+  color: #75002a;
 }
 .nav-top:active {
-  color: #d39f9f;
+  color: #75002a;
 }
 
 .a-menu {
@@ -84,13 +89,13 @@ a {
 }
 
 #btn-top {
-  background-color: #a16868;
+  background-color: #d39f9f;
   border: none;
 }
 #btn-top:hover {
-  box-shadow: 3px 5px 25px #d39f9f;
+  box-shadow: 3px 5px 25px #d69595;
   transition: 0.5s;
-  background-color: #d39f9f;
+  background-color: #d69595;
   border-radius: 10px;
 }
 
@@ -143,34 +148,68 @@ main {
   padding: 30px;
   background-color: #fdf0f0;
 }
+
+#produtos-c {
+  padding: 2px;
+}
 #produtos-container {
-  grid-area: p;
+  width: 100px;
   height: 150px;
   display: flex;
 }
 #container-cards {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
 }
 #produtos {
   margin: auto;
-  padding: 0;
+  padding: 2px;
   display: flex;
 }
 #img-card {
   width: 200px;
   height: 200px;
 }
-#carrinho {
-  max-width: 900px;
-  margin: auto;
-  padding: 0 2%;
-  display: flex;
-}
+
 .produto-single {
-  width: 100%;
+  height: 100%;
   padding: 0 2%;
 }
+#carrin {
+  background-color: #cc9797;
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+#carrinho {
+  background-color: #cc9797;
+  max-width: 900px;
+  max-height: 150px;
+  margin-top: auto;
+  padding: 0 2%;
+  display: block;
+  grid-area: car;
+}
+#carrinho-h2 {
+  text-align: center;
+  color: #ffff;
+  height: 50px;
+  background-color: #af3f4e;
+}
+#btn-carrinho {
+  color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: #91043a;
+  border-radius: 40px;
+  position: relative;
+  top: 260px;
+  left: 200px;
+}
+
 .adicionar {
   background-color: #75002a;
 }
@@ -185,7 +224,9 @@ main {
 #contatos {
   background-color: #e7e7e7;
   grid-area: b;
-  margin-top: 50px;
+  margin-top: 0px;
+  max-width: 900px;
+  max-height: 150px;
 }
 .contatos {
   background-color: #e7e7e7;

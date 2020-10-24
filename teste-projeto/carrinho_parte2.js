@@ -48,52 +48,52 @@ const items = [
     preco: 50.9 / 2,
     quantidade: 0,
   },
-  // {
-  //   id: 6,
-  //   nome: "Manjericão",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Arranjo de Buquê De Manjericão Artificial Em Vaso de Cerâmica com Musgo Florae.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
-  // {
-  //   id: 7,
-  //   nome: "Alecrim",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Arranjo de Buquê De Alecrim Artificial Em Vaso de Cerâmica com Musgo Florae.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
-  // {
-  //   id: 8,
-  //   nome: "Agrião",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Como cultivar Agrião em casa - Ciclo Orgânico.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
+  {
+    id: 6,
+    nome: "Manjericão",
+    img:
+      "img/Screenshot_2020-10-15 Arranjo de Buquê De Manjericão Artificial Em Vaso de Cerâmica com Musgo Florae.png",
+    preco: 50.9,
+    quantidade: 0,
+  },
+  {
+    id: 7,
+    nome: "Alecrim",
+    img:
+      "img/Screenshot_2020-10-15 Arranjo de Buquê De Alecrim Artificial Em Vaso de Cerâmica com Musgo Florae.png",
+    preco: 50.9,
+    quantidade: 0,
+  },
+  {
+    id: 8,
+    nome: "Agrião",
+    img:
+      "img/Screenshot_2020-10-15 Como cultivar Agrião em casa - Ciclo Orgânico.png",
+    preco: 50.9,
+    quantidade: 0,
+  },
 ];
 inicializarLoja = () => {
   var containerProdutos = document.getElementById("produtos");
   items.map((val) => {
     containerProdutos.innerHTML +=
       ` <div id="produtos-container">
-                <div class="produto-single" >
-                    <img id="img-card" src="` +
+                  <div class="produto-single" >
+                      <img id="img-card" src="` +
       val.img +
       `" />
-                    <p> ` +
+                      <p> ` +
       val.nome +
       ` </p>
-                    <p> ` +
+                      <p> ` +
       val.preco1 +
       ` </p>
-                   <div class="adicionar" > <a  key="` +
+                     <div class="adicionar" > <a  key="` +
       val.id +
       `" href="#"> Adicionar ao carrinho </a></div>
-                </div>
-        </div>
-        `;
+                  </div>
+          </div>
+          `;
   });
 };
 inicializarLoja();
@@ -105,16 +105,16 @@ atualizarCarrinho = () => {
     if (val.quantidade > 0) {
       containerCarrinho.innerHTML +=
         `
-         <p>` +
+           <p>` +
         val.nome +
         ` | quantidade: ` +
         val.quantidade +
         ` | preço ` +
         val.preco +
         `</p>
-         <hr>
-  
-        `;
+           <hr>
+    
+          `;
     }
   });
 };
