@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e7e7e7;
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 1fr;
+  grid-template-rows: 25vh 6vh 150vh 50vh 9vh;
+  grid-template-areas:
+    "c c c"
+    "nt nt nt"
+    "m p a"
+    "b b b"
+    "r r r";
+}
+
+header {
+  background-color: #a16868;
+  display: flex;
+  grid-area: c;
+  height: 100%;
+
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 89px;
+  top: 7px;
+}
+#nome-da-loja {
+  justify-content: right;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 500px;
+}
+
+a {
+  font: 1.65rem "Liberation Mono", sans-serif;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.nav-top {
+  display: inline-flex;
+  padding-left: 1px;
+}
+
+.nav-top:link {
+  color: #ffffff;
+}
+.nav-top:visited {
+  color: #ffffff;
+}
+.nav-top:hover {
+  color: #d39f9f;
+}
+.nav-top:active {
+  color: #d39f9f;
+}
+
+.a-menu {
+  margin-right: 90px;
+  font-weight: bold;
+}
+.a-menu:link {
+  color: rgb(255, 255, 255);
+}
+.a-menu:visited {
+  color: rgb(255, 255, 255);
+}
+.a-menu:hover {
+  color: #75002a;
+}
+.a-menu:active {
+  color: #75002a;
+}
+
+#btn-top {
+  background-color: #a16868;
+  border: none;
+}
+#btn-top:hover {
+  box-shadow: 3px 5px 25px #d39f9f;
+  transition: 0.5s;
+  background-color: #d39f9f;
+  border-radius: 10px;
+}
+
+#nav-menu {
+  background-color: #d39f9f;
+  color: rgba(0, 0, 0, 0.8);
+  grid-area: nt;
+  justify-content: space-around;
+}
+ul {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 60px;
+  margin-left: 0%;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+main {
+  background-color: #ffffff;
+  grid-area: p;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#banner {
+  width: 100%;
+  height: 250px;
+  margin: 0;
+}
+
+#img-banner {
+  width: 100%;
+  height: 100%;
+}
+#Apresentacao {
+  font: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  background-color: #fdf0f0;
+}
+#produtos-container {
+  grid-area: p;
+  height: 150px;
+  display: flex;
+}
+#container-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+#produtos {
+  margin: auto;
+  padding: 0;
+  display: flex;
+}
+#img-card {
+  width: 200px;
+  height: 200px;
+}
+#carrinho {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 2%;
+  display: flex;
+}
+.produto-single {
+  width: 100%;
+  padding: 0 2%;
+}
+.adicionar {
+  background-color: #75002a;
+}
+#lado-esquerdo {
+  background-color: #e7e7e7;
+  grid-area: m;
+}
+#lado-direito {
+  background-color: #e7e7e7;
+  grid-area: a;
+}
+#contatos {
+  background-color: #e7e7e7;
+  grid-area: b;
+  margin-top: 50px;
+}
+.contatos {
+  background-color: #e7e7e7;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  background-color: #c4c4c4;
+  grid-area: r;
+  padding: 12px;
+}
+footer p,
+a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.3rem;
+}
+footer a:hover {
+  color: rgb(240, 78, 105);
+}
+/* pagina_trabalhe_conosco */
+#h1_trabalheConosco {
+  font: 1rem "Raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+#text_trabalheConosco {
+  font: 1rem "Raleway", sans-serif;
+
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: none;
+  font: 1rem "Raleway", sans-serif;
+  color: rgb(58, 58, 58);
+  background-color: #dedada;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+label {
+  font: 1rem "Raleway", sans-serif;
+}
+legend {
+  font: 1rem "Raleway", sans-serif;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: #dedada;
+  border: none;
+}
+#btn {
+  display: flex;
+  padding: 30px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+}
+input[type="submit"],
+input[type="reset"] {
+  margin: 20px;
+  background-color: #a16868;
+  color: #000000;
+  border: 0;
+  border-radius: 3px;
+  width: 100px;
+  justify-content: center;
+}
+input[type="reset"] {
+  background-color: #d39f9f;
+}
+/*CARRINHO*/
+
+#tabela {
+  border: 1px solid;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+}
+
+#texto {
+  text-align: center;
+  height: 50px;
+  font: 1rem "Raleway", sans-serif;
+}
+
+.colum_item {
+  text-align: center;
+}
+#linha {
+  border-top: 1px solid black;
+  width: 63%;
+  position: absolute;
+}
+
+.linha_final {
+  font: 1rem "Raleway", sans-serif;
+  background-color: #1f1d1d;
+  color: #fff;
+  text-align: left;
+  padding: 20px 0px 0px 20px;
+  height: 50px;
+  width: 62%;
+  position: absolute;
+}
+
+#fechar_compra {
+  border-radius: 27.5px;
+  width: 55px;
+  height: 55px;
+  background-color: green;
+  margin-top: 470px;
+  margin-left: 700px;
+  position: absolute;
+}

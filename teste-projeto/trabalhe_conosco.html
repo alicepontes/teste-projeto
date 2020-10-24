@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <title>E & A</title>
+  </head>
+  <body>
+    <section>
+     
+      <header>
+       <div id="nome-da-loja"><h1>E & A</h1>
+        <p>Floricultura</p></div>
+       <div id="nav-top" > <ul class="nav-top">
+        <a href="index.html"><li class="nav-top">Home</li></a>
+        <a href="#contatos"><li class="nav-top">Contato</li></a>
+        <a href="trabalhe_conosco.html"><li class="nav-top">Trabalhe Conosco</li></a>
+        <a href="carrinho.html"><button  id="btn-top" class="nav-top" type="button"> <svg width="43" height="45" viewBox="0 0 49 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.3548 26.4337C36.6607 27.8029 35.3132 28.7083 33.7819 28.7083H18.5715L16.3257 33.125H40.8257V37.5416H16.3257C13.2223 37.5416 11.2623 33.942 12.7528 30.9829L15.509 25.5945L8.15902 8.83329H4.07568V4.41663H10.7519L12.6711 8.83329H42.8878C44.4394 8.83329 45.4194 10.6441 44.664 12.1016L37.3548 26.4337ZM39.4169 13.25H14.6107L19.4494 24.2916H33.7819L39.4169 13.25ZM16.3257 39.75C14.0799 39.75 12.2628 41.7375 12.2628 44.1666C12.2628 46.5958 14.0799 48.5833 16.3257 48.5833C18.5715 48.5833 20.409 46.5958 20.409 44.1666C20.409 41.7375 18.5715 39.75 16.3257 39.75ZM32.6794 44.1666C32.6794 41.7375 34.4965 39.75 36.7424 39.75C38.9882 39.75 40.8257 41.7375 40.8257 44.1666C40.8257 46.5958 38.9882 48.5833 36.7424 48.5833C34.4965 48.5833 32.6794 46.5958 32.6794 44.1666Z" fill="black" fill-opacity="0.54"/>
+            </svg></button></a>
+        </ul></div>
+      </header>
+      <nav id="nav-menu">
+        <img id="logo" src="img/Adalee Naturals.png">
+        <ul id="nav-menu">
+            <a class="a-menu" href="pagina_flores.html"><li>Flores</li></a>
+            <a class="a-menu"href="pagina_plantas_ornamentais.html"><li>Plantas Ornamentais</li></a>
+            <a class="a-menu" href="pagina_hortalicas.html"><li>Hortaliças</li></a>
+          
+        </ul>
+      </nav>
+      <aside id="lado-esquerdo">
+      </aside>
+      <main> 
+        
+        <div id="banner">
+          <img id="img-banner"src="img/ea floricultura.png" alt="banner rosa com desenho de flores e plantas e o nome da loja" /> 
+        </div>
+        
+        <h1 id="h1_trabalheConosco">Trabalhe Conosco</h1>
+        <p id="text_trabalheConosco">Venha trabalhar conosco, basta se cadastrar em nosso site para participar de futuros processos seletivos.
+        </p>
+        <form name="" method="" action="">
+            <label for="nome">Nome </label>
+            <input
+              id="nome"
+              type="text"
+              name="nome_completo"
+              placeholder="Digite o seu nome completo"
+              
+            />
+    
+            <label for="Email">Email</label>
+            <input
+              id="Email"
+              type="email"
+              name="email"
+              placeholder="Digite seu email"
+            />
+    
+    
+            <label for="celular">Celular</label>
+            <input
+              id="celular"
+              type="tell"
+              name="celular"
+              placeholder="(99) 99999-9999"
+              pattern="“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$”"
+            />
+            
+            <fieldset >
+                <legend>Vagas disponíveis:</legend>
+                <input id="Vendedor" type="checkbox" name="Vendedor" />
+                <label for="Vendedor">Vendedor</label>
+                <br>
+                <input id="Caixa" type="checkbox" name="Caixa" />
+                <label for="Caixa">Caixa</label>
+                <br>
+                <input id="Florista" type="checkbox" name="Florista" />
+                <label for="Florista"> Florista </label>
+              </fieldset>
+              
+         
+    
+            <fieldset>
+              <legend>Possui experiência:</legend>
+              <input id="sim" type="radio" name="experiencia" value="sim" />
+              <label for="sim"> Sim </label>
+                <br>
+              <input id="nao" type="radio" name="experiencia" value="nao" />
+              <label for="nao"> Não </label>
+
+            </fieldset>
+         
+    
+            <div id="btn">
+            <input type="submit" name="btn_inscrição" value="Cadastrar" />
+            <input type="reset" name="btn_cancelar" value="Cancelar" />
+            </div>
+          </form>
+      </main>
+      <aside id="lado-direito">
+      </aside>
+      <article id="contatos">
+        <div class="contatos">
+          <svg width="25" height="25" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 17C0.333496 7.80001 7.80016 0.333344 17.0002 0.333344C26.2002 0.333344 33.6668 7.80001 33.6668 17V19.3833C33.6668 22.6667 31.1168 25.3333 27.8335 25.3333C25.8502 25.3333 23.9835 24.3667 22.9002 22.8833C21.4002 24.4 19.3002 25.3333 17.0002 25.3333C12.4002 25.3333 8.66683 21.6 8.66683 17C8.66683 12.4 12.4002 8.66668 17.0002 8.66668C21.6002 8.66668 25.3335 12.4 25.3335 17V19.3833C25.3335 20.7 26.5168 22 27.8335 22C29.1502 22 30.3335 20.7 30.3335 19.3833V17C30.3335 9.76668 24.2335 3.66668 17.0002 3.66668C9.76683 3.66668 3.66683 9.76668 3.66683 17C3.66683 24.2333 9.76683 30.3333 17.0002 30.3333H25.3335V33.6667H17.0002C7.80016 33.6667 0.333496 26.2 0.333496 17ZM12.0002 17C12.0002 19.7667 14.2335 22 17.0002 22C19.7668 22 22.0002 19.7667 22.0002 17C22.0002 14.2333 19.7668 12 17.0002 12C14.2335 12 12.0002 14.2333 12.0002 17Z" fill="black" fill-opacity="0.54"/>
+          </svg>
+          <a href="https://alice.pontes1@gmail.com" target="_blank"> <p>alice.pontes1@gmail.com</p></a>
+        </div>
+        <div class="contatos">
+          <svg width="25" height="25" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 17C0.333496 7.80001 7.80016 0.333344 17.0002 0.333344C26.2002 0.333344 33.6668 7.80001 33.6668 17V19.3833C33.6668 22.6667 31.1168 25.3333 27.8335 25.3333C25.8502 25.3333 23.9835 24.3667 22.9002 22.8833C21.4002 24.4 19.3002 25.3333 17.0002 25.3333C12.4002 25.3333 8.66683 21.6 8.66683 17C8.66683 12.4 12.4002 8.66668 17.0002 8.66668C21.6002 8.66668 25.3335 12.4 25.3335 17V19.3833C25.3335 20.7 26.5168 22 27.8335 22C29.1502 22 30.3335 20.7 30.3335 19.3833V17C30.3335 9.76668 24.2335 3.66668 17.0002 3.66668C9.76683 3.66668 3.66683 9.76668 3.66683 17C3.66683 24.2333 9.76683 30.3333 17.0002 30.3333H25.3335V33.6667H17.0002C7.80016 33.6667 0.333496 26.2 0.333496 17ZM12.0002 17C12.0002 19.7667 14.2335 22 17.0002 22C19.7668 22 22.0002 19.7667 22.0002 17C22.0002 14.2333 19.7668 12 17.0002 12C14.2335 12 12.0002 14.2333 12.0002 17Z" fill="black" fill-opacity="0.54"/>
+          </svg>
+          <a href="https://emilly.carrvalho@gmail.com" target="_blank"><p>Emilly.carrvalho@gmail.com </p></a>
+        </div>
+          <div class="contatos">
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 5H12.5C13.4167 5 14.1667 5.75 14.1667 6.66667C14.1667 8.75 14.5 10.75 15.1167 12.6167C15.3 13.2 15.1667 13.85 14.7 14.3167L11.0333 17.9833C13.4333 22.7 17.3 26.55 22.0167 28.9667L25.6833 25.3C26.0167 24.9833 26.4333 24.8167 26.8667 24.8167C27.0333 24.8167 27.2167 24.8333 27.3833 24.9C29.25 25.5167 31.2667 25.85 33.3333 25.85C34.25 25.85 35 26.6 35 27.5167V33.3333C35 34.25 34.25 35 33.3333 35C17.6833 35 5 22.3167 5 6.66667C5 5.75 5.75 5 6.66667 5ZM10.9 8.33333C11 9.81667 11.25 11.2667 11.65 12.65L9.65 14.65C8.96667 12.65 8.53333 10.5333 8.38333 8.33333H10.9ZM27.3333 28.3667C28.75 28.7667 30.2 29.0167 31.6667 29.1167V31.6C29.4667 31.45 27.35 31.0167 25.3333 30.35L27.3333 28.3667Z" fill="black" fill-opacity="0.54"/>
+              </svg>
+              <p> 61 99187-9653 / 61 99442-1389</p>
+          </div>
+              <div class="contatos">
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0002 3.33331C13.5502 3.33331 8.3335 8.54998 8.3335 15C8.3335 23.75 20.0002 36.6666 20.0002 36.6666C20.0002 36.6666 31.6668 23.75 31.6668 15C31.6668 8.54998 26.4502 3.33331 20.0002 3.33331ZM11.6668 15C11.6668 10.4 15.4002 6.66665 20.0002 6.66665C24.6002 6.66665 28.3335 10.4 28.3335 15C28.3335 19.8 23.5335 26.9833 20.0002 31.4666C16.5335 27.0166 11.6668 19.75 11.6668 15ZM15.8335 15C15.8335 12.6988 17.699 10.8333 20.0002 10.8333C21.4888 10.8333 22.8643 11.6275 23.6086 12.9166C24.3529 14.2058 24.3529 15.7941 23.6086 17.0833C22.8643 18.3725 21.4888 19.1666 20.0002 19.1666C17.699 19.1666 15.8335 17.3012 15.8335 15Z" fill="black" fill-opacity="0.54"/>
+                  </svg>
+                  <p>Brasília-DF</p>
+              </div>
+          
+      </article>
+      <footer>
+        <p>
+          Desenvolvido por
+          <a href="https://www.instagram.com/_emyss/" target="_blank"
+            >Emilly Carvalho</a> e <a href="">Alice Pontes </a>-2020 
+          
+        </p>
+        
+      </footer>
+    </section>
+  </body>
+</html>
