@@ -12,7 +12,7 @@ const items = [
     id: 1,
     nome: "Tulipa",
     img: "img/tulipa.jpg",
-    preco: 39.9,
+    preco1: 39.9,
     preco: 39.9 / 2,
     quantidade: 0,
   },
@@ -48,30 +48,6 @@ const items = [
     preco: 50.9 / 2,
     quantidade: 0,
   },
-  // {
-  //   id: 6,
-  //   nome: "Manjericão",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Arranjo de Buquê De Manjericão Artificial Em Vaso de Cerâmica com Musgo Florae.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
-  // {
-  //   id: 7,
-  //   nome: "Alecrim",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Arranjo de Buquê De Alecrim Artificial Em Vaso de Cerâmica com Musgo Florae.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
-  // {
-  //   id: 8,
-  //   nome: "Agrião",
-  //   img:
-  //     "img/Screenshot_2020-10-15 Como cultivar Agrião em casa - Ciclo Orgânico.png",
-  //   preco: 50.9,
-  //   quantidade: 0,
-  // },
 ];
 inicializarLoja = () => {
   var containerProdutos = document.getElementById("produtos");
@@ -82,17 +58,18 @@ inicializarLoja = () => {
                     <img id="img-card" src="` +
       val.img +
       `" />
-                    <p> ` +
+                   <div id="card-nome"> <p id="card-nome"> ` +
       val.nome +
       ` </p>
-                    <p> ` +
+                    <p id="card-nome"> ` +
       val.preco1 +
-      ` </p>
-                   <div class="adicionar" > <a  key="` +
+      ` </p></div>
+                   <div id="adicionar" > <a id="adicionar"  key="` +
       val.id +
-      `" href="#"> Adicionar ao carrinho </a></div>
+      `" href="#"> Adicionar  </a></div>
                 </div>
         </div>
+        </br>
         `;
   });
 };
@@ -137,3 +114,10 @@ for (var i = 0; i < links.length; i++) {
     return false;
   });
 }
+
+document.getElementById("btn-carrinho").addEventListener("click", () => {
+  alert("Compra realizada com sucesso!");
+});
+document.getElementsByTagName("btn_inscrição").addEventListener("click", () => {
+  alert("Cadastrado(a) com sucesso!");
+});

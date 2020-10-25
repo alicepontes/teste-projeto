@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #e7e7e7;
   margin: 0;
@@ -10,7 +11,7 @@ body {
 }
 section {
   display: grid;
-  grid-template-columns: 1fr 3.5fr 1fr;
+  grid-template-columns: 1fr 4fr 1.2fr;
   grid-template-rows: 25vh 9vh 130vh 30vh 9vh;
   grid-template-areas:
     "c c c"
@@ -42,20 +43,28 @@ header {
 }
 h1 {
   font: 4rem "Sacramento", cursive;
+  color: #ffffff;
 }
 #p-nome-loja {
   text-align: center;
-  font-family: "Kufam", cursive;
+  font: 1rem "Kufam", cursive;
+  color: #ddc8c8;
 }
 a {
   font: 1.65rem "Liberation Mono", sans-serif;
   text-decoration: none;
   color: #ffff;
 }
-
+#nav-top {
+  background-color: #d39f9f;
+  grid-area: nt;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .nav-top {
-  display: inline-flex;
   padding-left: 1px;
+  color: #ffffff;
 }
 
 .nav-top:link {
@@ -71,23 +80,6 @@ a {
   color: #75002a;
 }
 
-.a-menu {
-  margin-right: 90px;
-  font-weight: bold;
-}
-.a-menu:link {
-  color: rgb(255, 255, 255);
-}
-.a-menu:visited {
-  color: rgb(255, 255, 255);
-}
-.a-menu:hover {
-  color: #75002a;
-}
-.a-menu:active {
-  color: #75002a;
-}
-
 #btn-top {
   background-color: #d39f9f;
   border: none;
@@ -99,16 +91,9 @@ a {
   border-radius: 10px;
 }
 
-#nav-menu {
-  background-color: #d39f9f;
-  color: rgba(0, 0, 0, 0.8);
-  grid-area: nt;
-  justify-content: space-around;
-}
 ul {
   display: flex;
   height: 100%;
-  justify-content: center;
   align-items: center;
 }
 li {
@@ -116,13 +101,12 @@ li {
   margin-right: 15px;
 }
 
-.nav-menu {
+/* .nav-menu {
   width: 100%;
   height: 60px;
   margin-left: 0%;
   margin-bottom: 20px;
-  justify-content: space-between;
-}
+} */
 
 main {
   background-color: #ffffff;
@@ -131,7 +115,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 #banner {
   width: 100%;
   height: 250px;
@@ -151,51 +134,74 @@ main {
 
 #produtos-c {
   padding: 2px;
+  background-color: rgb(255, 255, 255);
+  height: 120vh;
+  display: block;
 }
 #produtos-container {
-  width: 100px;
-  height: 150px;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 200%;
   display: flex;
 }
-#container-cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin: 20px;
-}
+
 #produtos {
-  margin: auto;
-  padding: 2px;
+  background-color: chartreuse;
+  width: 100%;
   display: flex;
 }
+
+#card-nome {
+  background-color: #d69595;
+  padding: 3px;
+  margin: 5px;
+  width: 95%;
+  text-align: center;
+  font: 1rem "Kufam", cursive;
+  color: #ffffff;
+}
+
 #img-card {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+}
+#img-card:hover {
+  box-shadow: 3px 5px 25px #9c9c9c;
+  transition: 0.5s;
+  background-color: #e7d0d0;
+  border-radius: 6px;
 }
 
 .produto-single {
-  height: 100%;
+  /* background-color: rgb(234, 0, 255); */
+  width: 100%;
+  height: 200%;
   padding: 0 2%;
+  margin-right: 10px;
 }
+
 #carrin {
   background-color: #cc9797;
   width: 100%;
   height: 350px;
-  position: relative;
+  position: fixed;
+  border-radius: 5px;
 }
 #carrinho {
   background-color: #cc9797;
-  max-width: 900px;
   max-height: 150px;
   margin-top: auto;
   padding: 0 2%;
   display: block;
-  grid-area: car;
+  position: fixed;
 }
 #carrinho-h2 {
-  text-align: center;
+  padding-top: 10px;
+  padding-left: 70px;
   color: #ffff;
   height: 50px;
+  width: 100%;
   background-color: #af3f4e;
 }
 #btn-carrinho {
@@ -203,19 +209,66 @@ main {
   border: none;
   width: 80px;
   height: 80px;
-  background-color: #91043a;
+  background-color: crimson;
   border-radius: 40px;
   position: relative;
-  top: 260px;
-  left: 200px;
+  top: 240px;
+  left: 180px;
 }
 
-.adicionar {
-  background-color: #75002a;
+#adicionar {
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 5px;
+  width: 95%;
+  text-align: center;
+  font: 1rem "Kufam", cursive;
+  color: #ffffff;
+}
+#adicionar:hover {
+  box-shadow: 3px 5px 25px crimson;
+  transition: 0.5s;
+  background-color: crimson;
+  border-radius: 6px;
 }
 #lado-esquerdo {
   background-color: #e7e7e7;
   grid-area: m;
+}
+#nav-left {
+  display: block;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+  margin-top: 1px;
+}
+.nav-left {
+  background-color: #d39f9f;
+  margin-bottom: 3px;
+  padding-top: 2px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+.nav-left {
+  padding-left: 1px;
+  color: #ffffff;
+}
+
+.nav-left:link {
+  color: #ffffff;
+}
+.nav-left:visited {
+  color: #ffffff;
+}
+.nav-left:hover {
+  color: #75002a;
+}
+.nav-left:active {
+  color: #75002a;
 }
 #lado-direito {
   background-color: #e7e7e7;
@@ -224,9 +277,11 @@ main {
 #contatos {
   background-color: #e7e7e7;
   grid-area: b;
-  margin-top: 0px;
-  max-width: 900px;
-  max-height: 150px;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .contatos {
   background-color: #e7e7e7;
@@ -234,11 +289,14 @@ main {
   height: 20px;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+  grid-area: b;
 }
 footer {
   background-color: #c4c4c4;
   grid-area: r;
   padding: 12px;
+  margin-bottom: 0;
 }
 footer p,
 a {
@@ -315,7 +373,7 @@ input[type="reset"] {
 input[type="reset"] {
   background-color: #d39f9f;
 }
-/*CARRINHO*/
+/* CARRINHO
 
 #tabela {
   border: 1px solid;
@@ -360,4 +418,4 @@ input[type="reset"] {
   margin-top: 470px;
   margin-left: 700px;
   position: absolute;
-}
+} */
