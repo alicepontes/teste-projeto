@@ -121,3 +121,4 @@ document.getElementById("btn-carrinho").addEventListener("click", () => {
 document.getElementsByTagName("btn_inscrição").addEventListener("click", () => {
   alert("Cadastrado(a) com sucesso!");
 });
+
