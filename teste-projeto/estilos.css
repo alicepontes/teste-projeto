@@ -182,6 +182,10 @@ main {
   background-color: #e7d0d0;
   border-radius: 6px;
 }
+#lado-direito {
+  background-color: #e7e7e7;
+  grid-area: a;
+}
 
 .produto-single {
   /* background-color: rgb(234, 0, 255); */
@@ -191,11 +195,12 @@ main {
   margin-right: 10px;
 }
 
+
 #carrin {
   background-color: #cc9797;
-  width: 100%;
+  width: 50%;
   height: 350px;
-  position: fixed;
+  position: absolute;
   border-radius: 5px;
 }
 #carrinho {
@@ -204,7 +209,7 @@ main {
   margin-top: auto;
   padding: 0 2%;
   display: block;
-  position: fixed;
+  position: absolute;
 }
 #carrinho-h2 {
   padding-top: 10px;
@@ -214,6 +219,25 @@ main {
   width: 100%;
   background-color: #af3f4e;
 }
+
+#total {
+  background-color: #cc9797;
+  width: 50%;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 34%;
+}
+
+#total-h2 {
+  padding-top: 10px;
+  padding-left: 70px;
+  color: #ffff;
+  height: 50px;
+  width: 100%;
+  background-color: #af3f4e;
+
+ } 
 #btn-carrinho {
   color: #ffffff;
   border: none;
@@ -223,7 +247,7 @@ main {
   border-radius: 40px;
   position: relative;
   top: 240px;
-  left: 160px;
+  left: 500px;
 }
 
 #adicionar {
@@ -280,10 +304,8 @@ main {
 .nav-left:active {
   color: crimson;
 }
-#lado-direito {
-  background-color: #e7e7e7;
-  grid-area: a;
-}
+
+
 #article-nav {
   background-color: #d39f9f;
   padding-top: 750px;

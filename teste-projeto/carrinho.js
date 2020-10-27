@@ -48,6 +48,8 @@ const items = [
     preco: 50.9 / 2,
     quantidade: 0,
   },
+
+  
 ];
 inicializarLoja = () => {
   var containerProdutos = document.getElementById("produtos");
@@ -77,7 +79,7 @@ inicializarLoja();
 
 atualizarCarrinho = () => {
   var containerCarrinho = document.getElementById("carrinho");
-  containerCarrinho.innerHTML = "";
+  containerCarrinho.innerHTML = "ITENS ADICIONADOS:";
   items.map((val) => {
     if (val.quantidade > 0) {
       containerCarrinho.innerHTML +=
@@ -115,6 +117,49 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
+
+//Passar string para número
+function moneyTextToFloat(text){
+  var cleanText=text.replace('R$', '').replace(',', '.');
+  return parseFloat(cleanText);
+}
+//Passar número para string
+function floatToMoneyText(value){
+  var text= (value<1 ? '0' : '')+ Math.floor(value * 100);
+  text='R$'+text;
+  return text.substr(0, text.length -2) + ',' +text.substr(-2);
+}
+
+//LER O TOTAL
+function readTotal() {
+  var total=document.getElementById('total');
+  return moneyTextToFloat(total.innerHTML);
+}
+
+//ESCREVER O TOTAL
+function writeTotal(value){
+  var total=document.getElementById('total');
+  total.innHTML=floatToMoneyText(value);
+}
+
+//CALCULAR TOTAL PELO PREÇO E QUANTIDADE
+function calculateTotalProducts(){
+  var produtos=document.getElementsByClassName('produto');
+  var totalProdutos=0;
+    for (var pos=0; pos<produtos.length; pos++){
+      var priceElements= produtos[pos].getElementsByClassName('price');
+      var priceText=priceElements[0].innerHTML;
+      var price=moneyTextToFloat(priceText);
+      var qtyElements=produtos [pos].getElementsByClassName('quantity');
+      var qtyText=qtyElements[0].value;
+      var quantity=moneyTextToFloat(qtyText);
+      var subtotal=quantity * price;
+      totalProdutos+=subtotal;
+   }
+    return totalProdutos;
+  }
+   // }
+//}
 document.getElementById("btn-carrinho").addEventListener("click", () => {
   alert("Compra realizada com sucesso!");
 });
